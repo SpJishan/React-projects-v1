@@ -1,0 +1,13 @@
+.active {
+    color: #D9F82D  ;
+  }
+  
+  .inactive {
+    color: #000000;
+  }
+
+  .heading{
+    color: #347928;
+    
+    margin-Top: "50px";
+  }
