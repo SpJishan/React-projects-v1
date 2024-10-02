@@ -1,0 +1,35 @@
+Approach to the coding:
+1. On JSX, we will create an ImageSlider function with two props for url and for limit. 
+
+2. Declaring two state variables, one for images, which was set to an empty array , and another one for loading the current slide, whose initial state was 0
+
+3. UseEffect to check for every render if the url is not empty!. Then it will execute the fetchurl function to get the url from the API.
+
+4. Then we need to create the fetchurl async function. On that:
+        A. We will use the try-and-catch method. For error handling, we need to use the catch method. In order to catch the error, we need to declare another state variable named errorMsg.
+
+        B. On try method, first of all we need to declare the loading state variable whose initial value is set to false, but on try method the setloading state will be true, and on catch method it needs to be set false.
+
+        C. We would create a variable to store the URL called by the await fetch method. Let's name it response. Then we need to call the response as.json() to store the images in the variable called data.
+        
+        D. An if condition to check two things. If it is getting any image(data). If true, then we store the data in the setImages state, and we also don't need the loading state. So it will be false.
+
+5. If statement for loading state and errorMsg state to display message.
+
+6. Extra parameters for ImageSlider as page and limit. Also updated it on app.js
+
+7. Import the left and right arrows from react-icons.
+
+8. On return, we need a left arrow with the onClick property of a function to change images to left.
+
+9. Then we need to check the images && images.length is true. It will pass an image with key, alt and src property , which will be dynamically be linked with imageItem
+
+10. We need a left arrow with the onClick property of a function to change images to left.
+
+11. Circle indicator for all the images.
+
+12. Cilck to move on the current slide.
+
+
+
+
