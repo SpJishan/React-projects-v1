@@ -59,10 +59,11 @@ export default function LoadMoreData() {
           : null}
       </div>
       <div className="button-container">
-        <button className="btn btn--green btn--animated" disabled={disableButton} onClick={() => setCount(count + 1)}>
+      {disableButton ? <p>You have reached to 100 products. Nothing to load!</p> : null}
+        <button disabled={disableButton} className={products.length === 100 ? "btn--hide":"btn btn--red btn--animated" } onClick={() => setCount(count + 1)}>
           Load More Products
         </button>
-        {disableButton ? <p>You have reached to 100 products</p> : null}
+        
       </div>
     </div>
     </div>

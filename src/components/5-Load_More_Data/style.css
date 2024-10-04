@@ -20,6 +20,7 @@
 .HotItemCard{
     display: flex;
     padding: 25px;
+    /* border: 1px solid red; */
     flex-direction: column;
     align-items: center;
     background-color: white;
@@ -159,3 +160,7 @@
   .btn-text:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0); }
+
+    .btn--hide{
+        display: none;
+    }
