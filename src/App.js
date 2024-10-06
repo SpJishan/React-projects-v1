@@ -8,6 +8,7 @@ import LoadMoreData from './components/5-Load_More_Data';
 import TreeView from './components/6-Nested_Menu_UI_v1';
 import menus from './components/6-Nested_Menu_UI_v1/data';
 import SideMenu from './components/7-Nested-Menu-v2';
+import QRCodeGenerator from "./components/8-QR_Code_Generator";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <TreeView menus={menus} />
 
       <SideMenu/>
+      <QRCodeGenerator/>
     </div>
   );
 }
